@@ -1,0 +1,87 @@
+.devices{
+    width: 100%;
+}
+
+.device-wrapper{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+.iot-title{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #1c4386;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.cards-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+}
+.device-card{
+    width: 250px;
+    padding: 0 15px;
+    margin: 1rem;
+    border: 1px solid #1c4386;
+    border-radius: 25px;
+}
+.device-card:hover{
+    cursor: pointer;
+    padding: 0 15px;
+    margin: 1rem;
+    border-radius: 25px;
+    background: #1c4386;
+    transition: 0.3s ease-in-out;
+    color: white;
+}
+
+.card-content{
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.card-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.device-card:hover .card-title{
+    /* font-size: 1.2rem; */
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.device-card:hover .card-desc{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.card-img img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card-title{
+    /* font-size: 1.2rem; */
+    font-weight: 300;
+    color: #1c4386;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.card-desc{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #1c4386;
+    margin-bottom: 30px;
+    text-align: center;
+}

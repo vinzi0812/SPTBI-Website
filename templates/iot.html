@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load custom_filters %}
+{% load static %}
+{% block Title %} IoT Devices {% endblock %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/iot.css' %}">
+{% endblock %}
+{% block content %}
+<div class="devices">
+    <div class="device-wrapper">
+        <div class="iot-title">
+            <h1>IoT Devices</h1>
+        </div>
+        <div class="cards-wrapper">
+            {% for device, spec in devices|zip_lists:specs %}
+            <div class="device-card">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="{{ device.image.url }}" alt="device image">
+                    </div>
+                    <div class="card-title">
+                        <h2>{{ device.name }}</h2>
+                    </div>
+                    <div class="card-desc">
+                        {% for sp in spec %}
+                            {% for s in sp %}
+                                {% if forloop.counter == 1%}
+                                <strong>{{ s }}: &nbsp </strong>
+                                {% else %}
+                                {{ s }} <br>
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
