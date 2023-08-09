@@ -1,6 +1,5 @@
 from django.db import models
 from django.contrib.postgres.fields import ArrayField
-from multiselectfield import MultiSelectField
 from django.contrib.auth.models import AbstractUser
 from .manager import UserManager
 from django.utils.text import slugify

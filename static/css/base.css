@@ -16,8 +16,31 @@ body {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    scrollbar-arrow-color: transparent;
+
+  /* Change the color of the scrollbar thumb (the draggable part) */
+  scrollbar-color: #a0a0a0 #1c4386; /* thumb color and track color */
+
+  /* Firefox */
+  scrollbar-width: thin; /* "thin" or "auto" */
+  scrollbar-color: #a0a0a0 #1c4386; /* thumb color and track color */
     /* align-items: center; */
 }
+
+
+/* For Webkit-based browsers like Chrome or Safari */
+::-webkit-scrollbar {
+  width: 12px; /* Set a width for the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e5e5e5; /* Change thumb color */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1c4386; /* Change track color */
+}
+
 
 .header {
   display: flex;
